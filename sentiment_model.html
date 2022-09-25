@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio Optimization</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Chloe Lin</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Data Analytics Projects</a>
+								<ul>
+									<li><a href="sentiment_model.html">Portfolio Optimization</a></li>
+									<li><a href="startup_funding.html">Startup Fundings</a></li>
+									<li><a href="health.html">Social Determinants of Health</a></li>
+								</ul>
+							</li>
+							<li><a href="designs.html">Graphic Design</a></li>
+							<li><a href="#" class="button primary">Contact Me</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Markowitz Portfolio Optimization Model</h2>
+							<p>Using Yahoo Finance API, Twitter API and NLP libraries on Python</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3>Source Codes</h3>
+											<p>View the full project repository on GitHub</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://github.com/chlo3wl/Markowitz_Optimization" class="button">View on GitHub</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/Markowitz_frontier.jpeg" alt="" /></a>
+											<h3>What is the Markowitz model?</h3>
+											<p>The Markowitz model (a.k.a. modern portfolio theory) was pioneered by Nobel Prize-winning American economist <a href="https://www.vestwell.com/">Harry Markowitz</a> in 1952.</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://en.wikipedia.org/wiki/Markowitz_model" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+							<div class="col-8 col-12-medium imp-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<h3>Background</h3>
+										<p>Considering rising inflation and global market volatility, this project proposes an application that supports private individuals in their investment strategy. Particularly, the application should help its users with creating, managing, and reporting their stock portfolio.</p>
+										<p>As the hype around stocks like GameStop has underlined the importance of online sentiment around stocks, we plan on not only including hard financial metrics for our application but also Twitter data to provide users with a more comprehensive analysis.</p>
+										
+										<h3>Data Description</h3>
+										<p>The application relies on publicly available financial data from Yahoo Finance, which is obtained via the official Yahoo Finance API. Financial data includes but is not limited to current
+											and historical stock prices, balance sheets, and news feeds. This data can be stored and
+											retrieved as a CSV file.</p>
+										<p>To support users with a more comprehensive analysis, this model uses publicly available
+											Twitter data obtained via the official Twitter API. This includes but is not limited to tweets with
+											a particular hashtag or tweets from a particular corporate account. This text data can be stored
+											and retrieved as a CSV file.</p>
+										<p>Lastly, the application also considers user-specific input data, including
+											his/her risk profile, preferred industries, or personally selected stocks. The user-specific data is created as a CSV file or as direct input in the application.</p>
+										
+										<h3>Model Functionalities</h3>
+										<p>This model has five main functionalities:</p>
+											<ol>
+												<li>Creating a Markowitz optimized portfolio for a given list
+													of stocks that the user is interested in. The application comes up with the different weights for
+													each stock and stores the portfolio for the user in a database.</li>
+												<li>Using the user’s risk profile and preferred industries to create a Markowitz optimized
+													portfolio and store it in a database.</li>
+												<li>Handling portfolio modifications for stored portfolios, including
+													adding or deleting stocks from the portfolio and recalculating weights accordingly.</li>
+												<li>Providing comprehensive insights on a given stock,
+													including basic financial ratios and analyses but also more qualitative insights into the current
+													sentiment on Twitter and the news around the stock.</li>
+												<li>Creating short reports that inform
+													the user about the overall portfolio performance and the current sentiments around the stocks
+													in the portfolio.</li>
+											</ol>
+										<a href="#" class="image fit"><img src="images/reports.png" alt="" /></a>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/chloewl/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/bychloe.wj/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/chlo3wl" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:wj0311@wharton.upenn.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Chloe Lin 2022. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

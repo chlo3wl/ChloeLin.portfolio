@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Startup Fundings</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Chloe Lin</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Data Analytics Projects</a>
+								<ul>
+									<li><a href="sentiment_model.html">Portfolio Optimization</a></li>
+									<li><a href="startup_funding.html">Startup Fundings</a></li>
+									<li><a href="health.html">Social Determinants of Health</a></li>
+								</ul>
+							</li>
+							<li><a href="designs.html">Graphic Design</a></li>
+							<li><a href="#" class="button primary">Contact Me</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Startups & VC Funding Success</h2>
+							<p>Using a hypothesis-driven approach and regression analyses on Stata</p>
+						</header>
+						<div class="row gtr-150">
+							<div class="col-8 col-12-medium">
+
+								<!-- Content -->
+									<section id="content">
+										<h3>Data Description</h3>
+										<p>The data was provided by a Bocconi course, <a href"https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=30587&anno=2022&IdPag=">Data-Driven Analysis and Decision-Making in Business</a>.
+										It reports information about 11736 startups founded between 1995 and 2014 in the U.S., U.K., Italy, and Israel. There are 44 columns of data from each startup from the following categories: </p>
+										<ul style="padding-bottom: 0;">
+											<li>Basic company information</li>
+											<ul>
+												<li style="margin-left:2em; padding-bottom: 0;">Name</li>
+												<li style="margin-left:2em; padding-bottom: 0;">Founding / closing dates</li>
+												<li style="margin-left:2em; padding-bottom: 0;">Industry</li>
+												<li style="margin-left:2em; padding-bottom: 0;">Whether it is still operative or acquired/IPO/closed</li>
+												<li style="margin-left:2em; padding-bottom: 0;">Country & region</li>
+											</ul>
+											<li>Startup founding team and employees' educational backgrounds</li>
+												<ul>
+													<li style="margin-left:2em; padding-bottom: 0;">Types of degrees: CS, business, math/physics, law, or social</li>
+													<li style="margin-left:2em; padding-bottom: 0;">Top general universities or top business schools </li>
+												</ul>
+											<li>Startup founding team and employees' professional experiences</li>
+												<ul>
+													<li style="margin-left:2em; padding-bottom: 0;">Previous experience from leading technology companies (Google, Microsoft, Amazon, Apple, or Facebook) or top strategy consulting firms (McKinsey, Boston Consulting Group or Bain & Company)</li>
+													<li style="margin-left:2em; padding-bottom: 0;">Previous experience from the same industry as the startup </li>
+													<li style="margin-left:2em; padding-bottom: 0;">Previous experience from successful startup or another startup which failed</li>
+													<li style="margin-left:2em; padding-bottom: 0;">Serial entrepreneur whose another startup was successful or failed</li>
+												</ul>
+											<li>Funding round info and funds raised</li>
+												<ul>
+													<li style="margin-left:2em; padding-bottom: 0;">Dates of first & last founding rounds (if any)</li>
+													<li style="margin-left:2em; padding-bottom: 0;">Number of founding rounds</li>
+													<li style="margin-left:2em; padding-bottom: 0;">Total funding raised in US dollars</li>
+												</ul>
+										</ul>
+
+										<h3>Research Question</h3>
+										<p>We set out a research question that oriented our analyses:
+											<ul>
+												<li> What are the main founding team characteristics that VCs look at when it comes to financing startups?</li>
+											</ul>
+
+										<h3>Hypotheses</h3>
+										<p>The most promising firms – those of which the founding team has previous quality experience at another startup, successful firm, or has worked in the same industry – will have a higher probability of receiving financing from VCs. 
+											Here are the two theories to be tested: 
+										</p>
+										<ol>
+											<li>Startups whose founders already had a successful business in the past and/or in the same industry are more likely to develop into promising firms.</li>
+											<li>Startups whose founders graduated from top universities and have management experience are more likely to develop into promising firms.</li>
+										</ol>
+										The following analyses uses standardized "founding_rounds" as the dependent/outcome variable and only focus on startups that are still operating.</p>
+
+										<h3>Highlights of Relevant Findings by Theory</h3>
+											<h4>Theory I</h4>
+												<p>Both of the independent variables used (number of founders in a team who have another experience from a successful startup; 
+													number of founders in a team with another experience from the same industry as the startup they now founded) were statistically 
+													significant positive correlation with the number of funding rounds received by the startup. Thus, a firm is more likely to receive funding 
+													if the founders on the team have both/either experience from a successful startup or experience in the same industry as the startup they now founded.
+													<span class="image fit main"><img src="images/Stata1.png" alt="" /></span></p>
+											<h4>Theory II</h4>
+												<p>Out of the three independent variables used (number of founders with experience in Big 5 tech companies; number of top university degrees
+													 in the founding team; number of founders with experience from leading consulting firms), only "f_top_uni_degrees" is a statistically 
+													 significant positively correlated predictor of number of founding rounds. Not only were Big 5 and MBB experiences not statistically significant, 
+													 they also have negative coefficients. This is counterintuitive because, logically, these ex-Big-Tech and ex-MBB consultant would be able to 
+													 bring expertise and network from their previous role to increase the chances of procuring funding. Perhaps, due to their former career, they might 
+													 have developed a structured way of thinking that works for big firms but hinders creativity, which is critical to the success of startups. 
+													 <span class="image fit main"><img src="images/Stata2.png" alt="" /></span></p>
+									</section>
+
+							</div>
+							<div class="col-4 col-12-medium">
+
+								<!-- Sidebar -->
+									<section id="sidebar">
+										<section>
+											<h3><strong>3000</strong> raw ideas</h3>
+											<h3><b>300</b> submitted to VC</h3>
+											<h3><b>50</b> ideas given analysis</h3>
+											<h3><b>1</b> offer made</h3>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://www.jstor.org/stable/24131400#metadata_info_tab_contents" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+										<hr />
+										<section>
+											<a href="#" class="image fit"><img src="images/CoxChart.png" alt="" /></a>
+											<h3>Desirable Startup Characteristics</h3>
+											<p>Startups have a higher chance of becoming “unicorns” if they were led by one founder CEO, had profits, used a platform business model, and receiving fundings from VCs.</p>
+											<footer>
+												<ul class="actions">
+													<li><a href="https://journals.aom.org/doi/10.5465/AMBPP.2021.11469abstract" class="button">Learn More</a></li>
+												</ul>
+											</footer>
+										</section>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/chloewl/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/bychloe.wj/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/chlo3wl" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:wj0311@wharton.upenn.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Chloe Lin 2022. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

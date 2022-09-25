@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<!--
+	Landed by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Social Determinants of Health</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">Chloe Lin</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#">Data Analytics Projects</a>
+								<ul>
+									<li><a href="sentiment_model.html">Portfolio Optimization</a></li>
+									<li><a href="startup_funding.html">Startup Fundings</a></li>
+									<li><a href="health.html">Social Determinants of Health</a></li>
+								</ul>
+							</li>
+							<li><a href="designs.html">Graphic Design</a></li>
+							<li><a href="#" class="button primary">Contact Me</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Social Determinants of Health</h2>
+							<p>A fundamental analysis of the relationship between socioeconomic factors and population's health</p>
+						</header>
+
+						<!-- Content -->
+							<section id="content">
+								<h3>Data Description</h3>
+								<p>The data was sourced from <a href"https://www.countyhealthrankings.org">Country Health Rankings</a>.
+									It includes health, economic, and demographic characteristics measured at the county level in 
+									the US. There are a total of 25 columns of data from the following categories: </p>
+								<ul style="padding-bottom: 0;">
+									<li>Data identifiers</li>
+										<ul>
+											<li style="margin-left:2em; padding-bottom: 0;">An additional column "Region" was created based on the "State Abbreviation" column.</li>
+										</ul>
+									<li>Outcome variables</li>
+										<ul>
+											<li style="margin-left:2em; padding-bottom: 0;">The outcome variable I chose to examine was Poor Health, which indicates the proportion of county that has a poor health status</li>
+										</ul>
+									<li>Social determinants of health</li>
+										<ul>
+											<li style="margin-left:2em; padding-bottom: 0;">Behavioral</li>
+											<li style="margin-left:2em; padding-bottom: 0;">Environmental</li>
+											<li style="margin-left:2em; padding-bottom: 0;">Demographic</li>
+										</ul>
+								</ul>
+
+								<h3>Objective</h3>
+								<p>Looking at the data made available to me, I set out three guiding questions that oriented my analyses:</p>
+											<ol style="padding-bottom: 0;">
+												<li>Which social determinants of health is the most significant predictor of the health index?</li>
+												<li>How does socioeconomic level affect the health index?</li>
+												<li>How does access/quality of care impact the health index?</li>
+											</ol>
+								
+								<h3>Highlights of Relevant Findings</h3>
+								<p>In the South and Midwest regions, the number of smokers and excessive drinkers are negatively correlated, 
+									indicating that cigarettes and alcohol are substitute goods - people choose one over the other. On the other hand, in the West region, 
+									smokers and excessive drinks are positively correlated, indicating that they are complimentary goods - people who tend to drink also tend to smoke and vice versa.</p>
+									<span class="image fit main"><img src="images/Graph1.png" alt="" /></span>
+								<p>Unsurprisingly, counties with more income inequality or food insecurity have higher proportion of people with poor health</p>
+									<div class="row gtr-uniform">
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/graph2.png" alt="" /></span></div>
+										<div class="col-6 col-6-medium"><span class="image fit"><img src="images/graph3.png" alt="" /></span></div>
+									</div>
+								
+								<h3>Predictive Modeling for Health Index</h3>
+								<p>A decision tree is performed using all behavioral variables along with "Food Insecurity Quintile" and "Income Inequality Quartile" variables from the environmental variables.
+									 "Proportion.of.Smokers" has the highest variable importance, meaning that smoking is the most important factor of poor health. Generally, the counties that have lower health
+									  index are the ones that has: </p>
+									<ul>
+										<li>A proportion of smokers greater than 19.1%</li>
+										<li>A proportion of excessive drinkers less than 15%</li>
+										<li>A proportion of insufficient sleepers greater than 41.4%</li>
+									</ul>
+									<span class="image fit main"><img src="images/graph4.png" alt="" /></span>
+								
+								<h3>Suggestions for Future Research</h3>
+								<p><ul>
+									<li>Expanding "Social Determinants of Health - Environmental" to include health-related policy such as beverage tax and cigarette tax, as well as physical determinants such as climate/weather.</li>
+									<li>Examining the change of health index over time</li>
+									<li>Conduct more/bigger regression models</li>
+									<ul><ul>
+											 <li>Add interaction terms (ex. interaction between drinks and smokers variables)</li>
+										</ul></ul>
+									</li>
+								</ul>
+								</p>
+							</section>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/chloewl/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.instagram.com/bychloe.wj/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/chlo3wl" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:wj0311@wharton.upenn.edu" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Chloe Lin 2022. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
