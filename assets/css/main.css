@@ -2474,8 +2474,10 @@ input, select, textarea {
 			border-radius: 100%;
 			cursor: default;
 			display: inline-block;
+			justify-content: center;
+			align-items: center;
 			height: 6em;
-			line-height: 5.65em;
+			line-height: 6.6em;
 			margin: 0 0 2em 0;
 			text-align: center;
 			width: 6em;
@@ -2493,6 +2495,7 @@ input, select, textarea {
 					-moz-osx-font-smoothing: grayscale;
 					-webkit-font-smoothing: antialiased;
 					display: inline-block;
+					justify-content: center;
 					font-style: normal;
 					font-variant: normal;
 					text-rendering: auto;
@@ -3070,9 +3073,9 @@ input, select, textarea {
 			display: none;
 		}
 
-			.spotlight .image.main img {
-				position: relative;
-			}
+		.spotlight .image.main img {
+			position: relative;
+		}
 
 		.spotlight .content {
 			-moz-transform: translate(0,0);
@@ -3682,7 +3685,7 @@ input, select, textarea {
 					padding: 4.5em 2.5em 2.5em 2.5em !important;
 					position: relative;
 					right: auto !important;
-					text-align: center;
+					text-align: left;
 					top: auto !important;
 					width: 100% !important;
 				}
